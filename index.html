@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Solution Boutique | Ready Made &amp; Festive Suits — Madani Mall Karachi</title>
+  <meta name="description" content="Official 1-Click Bio Storefront for Solution Boutique, Basement Shop # LG-62, Madani Mall, North Nazimabad, Karachi. Order directly on WhatsApp 24/7." />
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            serif: ['Playfair Display', 'serif'],
+            sans: ['Plus Jakarta Sans', 'sans-serif'],
+          },
+          colors: {
+            ivory: '#FAF7F2',
+            obsidian: '#111115',
+            gold: {
+              300: '#F3DF9A',
+              400: '#DEC066',
+              500: '#C59B27',
+              600: '#9E7816',
+            },
+          },
+        },
+      },
+    };
+  </script>
+
+  <style>
+    body {
+      background-color: #FAF7F2;
+      color: #16161A;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      overflow-x: hidden;
+    }
+
+    /* Gold Shimmer Button */
+    .btn-gold {
+      position: relative;
+      overflow: hidden;
+      background: linear-gradient(135deg, #E8CA70 0%, #C59B27 55%, #A37D18 100%);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+    .btn-gold::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -120%;
+      width: 65%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.55), transparent);
+      transform: skewX(-20deg);
+      animation: shimmer 3.2s infinite;
+    }
+    @keyframes shimmer {
+      0% { left: -120%; }
+      40%, 100% { left: 160%; }
+    }
+
+    /* Infinite Marquee */
+    .marquee-track {
+      display: flex;
+      width: max-content;
+      animation: marquee 24s linear infinite;
+    }
+    @keyframes marquee {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+
+    /* Hero Fade-Up Entrance */
+    .fade-up {
+      opacity: 0;
+      transform: translateY(22px);
+      animation: fadeUp 0.75s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+    }
+    .delay-1 { animation-delay: 0.1s; }
+    .delay-2 { animation-delay: 0.22s; }
+    .delay-3 { animation-delay: 0.34s; }
+    @keyframes fadeUp {
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Scroll Reveal Cards */
+    .reveal {
+      opacity: 0;
+      transform: translateY(28px) scale(0.98);
+      transition: opacity 0.65s cubic-bezier(0.22, 1, 0.36, 1), transform 0.65s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+
+    /* WhatsApp Pulse Ring */
+    @keyframes waPulse {
+      0% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.55); }
+      70% { box-shadow: 0 0 0 14px rgba(16, 185, 129, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0); }
+    }
+    .wa-pulse {
+      animation: waPulse 2.2s infinite;
+    }
+
+    /* Cart Badge Pop */
+    @keyframes pop {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.38); }
+      100% { transform: scale(1); }
+    }
+    .badge-pop {
+      animation: pop 0.35s ease;
+    }
+
+    /* Image Loading Shimmer */
+    .img-wrap {
+      background: linear-gradient(110deg, #EFEAE2 8%, #F8F5F0 18%, #EFEAE2 33%);
+      background-size: 200% 100%;
+      animation: shine 1.6s linear infinite;
+    }
+    @keyframes shine {
+      to { background-position-x: -200%; }
+    }
+
+    .no-scrollbar::-webkit-scrollbar { display: none; }
+    .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+  </style>
+</head>
+<body class="antialiased selection:bg-gold-400 selection:text-black pb-24 md:pb-0">
+
+  <!-- Animated Top Announcement Marquee -->
+  <div class="bg-obsidian text-gold-300 text-[11px] font-medium py-2 overflow-hidden border-b border-gold-500/25">
+    <div class="marquee-track">
+      <div class="flex items-center gap-8 px-4 whitespace-nowrap">
+        <span><i class="fa-solid fa-sparkles text-gold-400 mr-1.5"></i> Solution Boutique — Madani Mall, Shop # LG-62</span>
+        <span>•</span>
+        <span><i class="fa-brands fa-whatsapp text-emerald-400 mr-1.5"></i> 24/7 Instant WhatsApp Orders: 0316-3360405</span>
+        <span>•</span>
+        <span><i class="fa-solid fa-truck-fast text-gold-400 mr-1.5"></i> Fast Delivery Across All Pakistan</span>
+        <span>•</span>
+        <span><i class="fa-solid fa-check-circle text-gold-400 mr-1.5"></i> 100% Original Ready-Made 3-Piece Suits</span>
+        <span>•</span>
+      </div>
+      <div class="flex items-center gap-8 px-4 whitespace-nowrap" aria-hidden="true">
+        <span><i class="fa-solid fa-sparkles text-gold-400 mr-1.5"></i> Solution Boutique — Madani Mall, Shop # LG-62</span>
+        <span>•</span>
+        <span><i class="fa-brands fa-whatsapp text-emerald-400 mr-1.5"></i> 24/7 Instant WhatsApp Orders: 0316-3360405</span>
+        <span>•</span>
+        <span><i class="fa-solid fa-truck-fast text-gold-400 mr-1.5"></i> Fast Delivery Across All Pakistan</span>
+        <span>•</span>
+        <span><i class="fa-solid fa-check-circle text-gold-400 mr-1.5"></i> 100% Original Ready-Made 3-Piece Suits</span>
+        <span>•</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sticky Navigation -->
+  <header class="sticky top-0 z-40 bg-white/90 backdrop-blur-md border-b border-black/10 shadow-sm">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-3 group">
+        <div class="w-11 h-11 rounded-full bg-obsidian border-2 border-gold-500 flex items-center justify-center shadow-md group-hover:scale-105 transition">
+          <span class="font-serif font-bold text-lg text-gold-300 tracking-tight">SB</span>
+        </div>
+        <div>
+          <h1 class="font-serif text-lg sm:text-xl leading-tight font-bold text-obsidian tracking-tight">Solution Boutique</h1>
+          <p class="text-[11px] text-gold-600 font-semibold tracking-wider uppercase">North Nazimabad • LG-62</p>
+        </div>
+      </a>
+
+      <div class="flex items-center gap-2 sm:gap-3">
+        <a href="tel:+923422919358" class="hidden sm:inline-flex items-center gap-2 px-3.5 py-2 rounded-full border border-black/15 bg-ivory text-xs font-semibold text-obsidian hover:border-gold-500 hover:text-gold-600 transition">
+          <i class="fa-solid fa-phone text-gold-600"></i> 0342-2919358
+        </a>
+        <a href="#location" class="w-9 h-9 rounded-full border border-black/15 bg-ivory flex items-center justify-center text-obsidian hover:text-gold-600 hover:border-gold-500 transition" title="Shop Location">
+          <i class="fa-solid fa-location-dot text-sm"></i>
+        </a>
+        <button onclick="toggleCart()" class="btn-gold text-black font-bold text-xs px-4 py-2.5 rounded-full flex items-center gap-2 shadow-md active:scale-95">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span>Bag</span>
+          <span id="cart-count" class="bg-obsidian text-gold-300 text-[11px] font-bold px-1.5 py-0.5 rounded-full min-w-[20px] text-center">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Luxury Hero Banner -->
+  <section class="relative bg-obsidian text-white overflow-hidden">
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_rgba(222,192,102,0.22),_transparent_55%)] pointer-events-none"></div>
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,_rgba(222,192,102,0.12),_transparent_50%)] pointer-events-none"></div>
+
+    <div class="max-w-4xl mx-auto px-4 pt-9 pb-10 text-center relative z-10">
+      <div class="fade-up inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 border border-gold-400/40 text-gold-300 text-xs font-medium mb-4 backdrop-blur-sm">
+        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+        <span>Official 1-Click Storefront • Madani Mall Karachi</span>
+      </div>
+
+      <h2 class="fade-up delay-1 font-serif text-3xl sm:text-5xl font-bold leading-tight mb-3">
+        Luxury Ready-Made &amp; <span class="text-gold-300 italic">Festive Suits</span>
+      </h2>
+
+      <p class="fade-up delay-2 text-gray-300 text-sm sm:text-base max-w-xl mx-auto mb-7 leading-relaxed">
+        Select your favourite 3-piece embroidered dress, choose your size, and confirm your order directly on WhatsApp in <strong class="text-white">1 click</strong>.
+      </p>
+
+      <div class="fade-up delay-3 flex flex-wrap items-center justify-center gap-3">
+        <a href="#catalog" class="btn-gold text-black font-bold text-sm px-7 py-3.5 rounded-full shadow-lg shadow-gold-500/25 hover:scale-105 active:scale-95 flex items-center gap-2">
+          <i class="fa-solid fa-bag-shopping"></i> Explore Collection
+        </a>
+        <a href="https://wa.me/923163360405?text=Assalam-o-Alaikum%20Solution%20Boutique!%20Mujhe%20aapke%20ready-made%20suits%20ki%20details%20chahiye." target="_blank" class="wa-pulse bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-sm px-6 py-3.5 rounded-full transition hover:scale-105 active:scale-95 flex items-center gap-2">
+          <i class="fa-brands fa-whatsapp text-lg"></i> Order on WhatsApp
+        </a>
+        <a href="#location" class="bg-white/10 hover:bg-white/15 border border-white/20 text-white font-semibold text-sm px-5 py-3.5 rounded-full transition flex items-center gap-2">
+          <i class="fa-solid fa-map-location-dot text-gold-300"></i> Visit Shop
+        </a>
+      </div>
+
+      <!-- Highlight Pills -->
+      <div class="fade-up delay-3 grid grid-cols-3 gap-2.5 max-w-lg mx-auto mt-8 pt-6 border-t border-white/15 text-[11px] sm:text-xs text-gray-200">
+        <div class="bg-white/5 rounded-xl py-2.5 px-2 border border-white/10">
+          <i class="fa-solid fa-store text-gold-300 block mb-1 text-sm"></i>
+          <span>Shop # LG-62</span>
+        </div>
+        <div class="bg-white/5 rounded-xl py-2.5 px-2 border border-white/10">
+          <i class="fa-solid fa-truck-fast text-gold-300 block mb-1 text-sm"></i>
+          <span>All Pakistan</span>
+        </div>
+        <div class="bg-white/5 rounded-xl py-2.5 px-2 border border-white/10">
+          <i class="fa-solid fa-shield-heart text-gold-300 block mb-1 text-sm"></i>
+          <span>Real Articles</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product Collection Section -->
+  <main id="catalog" class="max-w-6xl mx-auto px-4 py-10">
+    <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-7">
+      <div>
+        <span class="text-gold-600 text-xs uppercase tracking-widest font-bold block mb-1">Latest 2026 Arrivals</span>
+        <h3 class="font-serif text-2xl sm:text-3xl font-bold text-obsidian">Featured 3-Piece Collection</h3>
+      </div>
+
+      <!-- Filter Tabs -->
+      <div class="flex items-center gap-2 overflow-x-auto no-scrollbar pb-1">
+        <button onclick="filterProducts('all')" data-filter="all" class="filter-btn px-4 py-2 rounded-full text-xs font-bold whitespace-nowrap bg-obsidian text-gold-300 shadow-sm transition">
+          All Suits (5)
+        </button>
+        <button onclick="filterProducts('festive')" data-filter="festive" class="filter-btn px-4 py-2 rounded-full text-xs font-bold whitespace-nowrap bg-white text-gray-700 border border-black/10 hover:border-gold-500 transition">
+          Festive Luxury
+        </button>
+        <button onclick="filterProducts('budget')" data-filter="budget" class="filter-btn px-4 py-2 rounded-full text-xs font-bold whitespace-nowrap bg-white text-gray-700 border border-black/10 hover:border-gold-500 transition">
+          Rs. 2,500 Specials
+        </button>
+      </div>
+    </div>
+
+    <!-- Clean White Product Grid -->
+    <div id="product-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Rendered via JavaScript -->
+    </div>
+  </main>
+
+  <!-- Store Location & Map Card -->
+  <section id="location" class="max-w-6xl mx-auto px-4 py-8">
+    <div class="reveal bg-white rounded-3xl overflow-hidden shadow-xl border border-black/10">
+      <div class="grid grid-cols-1 lg:grid-cols-2">
+        <!-- Address Info -->
+        <div class="p-6 sm:p-9 flex flex-col justify-between">
+          <div>
+            <span class="inline-flex items-center gap-1.5 text-gold-600 text-xs font-bold uppercase tracking-widest mb-2">
+              <i class="fa-solid fa-location-dot"></i> Visit Our Shop
+            </span>
+            <h3 class="font-serif text-2xl sm:text-3xl font-bold text-obsidian mb-2">Solution Boutique — Karachi</h3>
+            <p class="text-gray-600 text-sm mb-6">
+              Aap hamari shop par khud visit kar ke bhi apni pasand ka ready-made suit dekh aur khareed sakte hain.
+            </p>
+
+            <div class="space-y-4 text-sm">
+              <div class="flex items-start gap-3.5 p-3.5 rounded-2xl bg-ivory border border-black/5">
+                <div class="w-10 h-10 rounded-xl bg-obsidian text-gold-300 flex items-center justify-center shrink-0">
+                  <i class="fa-solid fa-store"></i>
+                </div>
+                <div>
+                  <p class="text-[11px] text-gray-500 font-semibold uppercase tracking-wider">Exact Address</p>
+                  <p class="text-obsidian font-bold mt-0.5">Basement Shop # LG-62, Madani Mall, Hyderi, North Nazimabad, Karachi</p>
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                <a href="https://wa.me/923163360405" target="_blank" class="flex items-center gap-3 p-3.5 rounded-2xl bg-emerald-50 border border-emerald-200 hover:bg-emerald-100 transition">
+                  <div class="w-10 h-10 rounded-xl bg-emerald-600 text-white flex items-center justify-center shrink-0">
+                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                  </div>
+                  <div>
+                    <p class="text-[11px] text-emerald-700 font-semibold">WhatsApp Orders</p>
+                    <p class="text-obsidian font-bold">0316-3360405</p>
+                  </div>
+                </a>
+
+                <a href="tel:+923422919358" class="flex items-center gap-3 p-3.5 rounded-2xl bg-ivory border border-black/10 hover:border-gold-500 transition">
+                  <div class="w-10 h-10 rounded-xl bg-obsidian text-gold-300 flex items-center justify-center shrink-0">
+                    <i class="fa-solid fa-phone"></i>
+                  </div>
+                  <div>
+                    <p class="text-[11px] text-gray-500 font-semibold">Call Contact</p>
+                    <p class="text-obsidian font-bold">0342-2919358</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap gap-3 mt-7">
+            <a href="https://www.google.com/maps/search/?api=1&query=Madani+Mall+Hyderi+North+Nazimabad+Karachi" target="_blank" class="btn-gold flex-1 min-w-[160px] text-black font-bold text-sm py-3.5 px-5 rounded-xl text-center shadow-md flex items-center justify-center gap-2">
+              <i class="fa-solid fa-diamond-turn-right"></i> Open Google Maps
+            </a>
+            <a href="tel:+923422919358" class="flex-1 min-w-[140px] bg-obsidian hover:bg-black text-white font-semibold text-sm py-3.5 px-5 rounded-xl text-center transition flex items-center justify-center gap-2">
+              <i class="fa-solid fa-phone text-gold-300"></i> Call Shop
+            </a>
+          </div>
+        </div>
+
+        <!-- Live Embedded Map -->
+        <div class="min-h-[320px] lg:min-h-full bg-gray-100">
+          <iframe
+            title="Solution Boutique - Madani Mall North Nazimabad Karachi"
+            src="https://maps.google.com/maps?q=Madani%20Mall%20North%20Nazimabad%20Karachi&t=&z=16&ie=UTF8&iwloc=&output=embed"
+            class="w-full h-full min-h-[330px] border-0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-obsidian text-gray-400 mt-10 py-9 px-4 text-center text-xs">
+    <div class="max-w-4xl mx-auto flex flex-col items-center gap-3">
+      <div class="w-11 h-11 rounded-full border-2 border-gold-500 bg-black flex items-center justify-center">
+        <span class="font-serif font-bold text-lg text-gold-300">SB</span>
+      </div>
+      <p class="text-white font-serif text-lg font-bold">Solution Boutique</p>
+      <p class="text-gray-300">Basement Shop # LG-62, Madani Mall, North Nazimabad, Karachi</p>
+      <div class="flex items-center gap-4 text-sm pt-1">
+        <a href="https://wa.me/923163360405" target="_blank" class="text-emerald-400 hover:underline"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+        <span>•</span>
+        <a href="tel:+923422919358" class="text-gold-300 hover:underline"><i class="fa-solid fa-phone"></i> 0342-2919358</a>
+        <span>•</span>
+        <a href="https://www.tiktok.com/@solution_boutique" target="_blank" class="text-white hover:underline"><i class="fa-brands fa-tiktok"></i> TikTok</a>
+      </div>
+      <p class="text-[11px] text-gray-500 pt-2">© 2026 Solution Boutique. All rights reserved. Powered by MFA Digital Storefronts.</p>
+    </div>
+  </footer>
+
+  <!-- Floating Desktop WhatsApp Button -->
+  <a href="https://wa.me/923163360405?text=Assalam-o-Alaikum%20Solution%20Boutique!%20Mujhe%20suit%20order%20karna%20hai." target="_blank" class="hidden md:flex wa-pulse fixed bottom-6 right-6 z-40 w-14 h-14 rounded-full bg-emerald-600 hover:bg-emerald-500 text-white items-center justify-center text-2xl shadow-2xl transition hover:scale-110" title="Chat on WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- Mobile Sticky Bottom Bar -->
+  <div class="md:hidden fixed bottom-0 left-0 right-0 z-40 bg-white/95 backdrop-blur-md border-t border-black/10 px-3 py-2.5 flex items-center gap-2 shadow-[0_-4px_20px_rgba(0,0,0,0.08)]">
+    <a href="tel:+923422919358" class="flex-1 bg-ivory border border-black/15 text-obsidian text-xs font-bold py-2.5 rounded-xl flex items-center justify-center gap-1.5">
+      <i class="fa-solid fa-phone text-gold-600"></i> Call
+    </a>
+    <a href="https://wa.me/923163360405?text=Assalam-o-Alaikum%20Solution%20Boutique!%20Mujhe%20order%20karna%20hai." target="_blank" class="flex-1 bg-emerald-600 text-white text-xs font-bold py-2.5 rounded-xl flex items-center justify-center gap-1.5 shadow-md">
+      <i class="fa-brands fa-whatsapp text-sm"></i> WhatsApp
+    </a>
+    <button onclick="toggleCart()" class="btn-gold px-4 text-black text-xs font-bold py-2.5 rounded-xl flex items-center justify-center gap-1.5 shadow-sm">
+      <i class="fa-solid fa-bag-shopping"></i> (<span id="mobile-cart-count">0</span>)
+    </button>
+  </div>
+
+  <!-- Full-Screen Lightbox Modal -->
+  <div id="image-modal" onclick="closeModal()" class="fixed inset-0 z-50 hidden bg-black/90 backdrop-blur-sm flex items-center justify-center p-4 transition-opacity">
+    <button onclick="closeModal()" class="absolute top-4 right-4 w-10 h-10 rounded-full bg-white/15 text-white flex items-center justify-center text-lg hover:bg-white/25 transition">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+    <div onclick="event.stopPropagation()" class="max-w-lg w-full text-center">
+      <img id="modal-img" src="" alt="Full Dress Preview" class="w-full max-h-[80vh] object-contain rounded-2xl bg-black border border-gold-400/40 shadow-2xl mx-auto" />
+      <p id="modal-caption" class="text-white font-serif text-lg mt-3"></p>
+      <p class="text-xs text-gray-400 mt-1">Tap outside to close</p>
+    </div>
+  </div>
+
+  <!-- Slide-Over Shopping Bag Drawer -->
+  <div id="cart-drawer" class="fixed inset-0 z-50 hidden">
+    <div onclick="toggleCart()" class="absolute inset-0 bg-black/60 backdrop-blur-sm"></div>
+    <div class="absolute right-0 top-0 bottom-0 w-full max-w-md bg-white flex flex-col shadow-2xl">
+      <div class="p-5 border-b border-black/10 flex items-center justify-between bg-obsidian text-white">
+        <div>
+          <h4 class="font-serif text-xl font-bold">Your Shopping Bag</h4>
+          <p class="text-xs text-gold-300">Instant WhatsApp Checkout</p>
+        </div>
+        <button onclick="toggleCart()" class="w-9 h-9 rounded-full bg-white/10 hover:bg-white/20 text-white flex items-center justify-center">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <div id="cart-items" class="flex-1 overflow-y-auto p-5 space-y-3 bg-ivory"></div>
+
+      <div class="p-5 border-t border-black/10 bg-white space-y-3">
+        <div class="space-y-2">
+          <input id="cust-name" type="text" placeholder="Your Full Name (Optional)" class="w-full bg-ivory border border-black/15 rounded-xl px-3.5 py-2.5 text-xs text-obsidian placeholder-gray-500 focus:outline-none focus:border-gold-500" />
+          <input id="cust-address" type="text" placeholder="Delivery City / Address (Optional)" class="w-full bg-ivory border border-black/15 rounded-xl px-3.5 py-2.5 text-xs text-obsidian placeholder-gray-500 focus:outline-none focus:border-gold-500" />
+        </div>
+
+        <div class="flex items-center justify-between text-sm pt-1">
+          <span class="text-gray-600 font-medium">Total Amount</span>
+          <span id="cart-total" class="text-xl font-extrabold text-obsidian">Rs. 0</span>
+        </div>
+
+        <button onclick="checkoutWhatsApp()" class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-sm py-3.5 rounded-xl flex items-center justify-center gap-2 shadow-lg active:scale-95 transition">
+          <i class="fa-brands fa-whatsapp text-lg"></i> Confirm Order on WhatsApp
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div id="toast" class="fixed top-20 left-1/2 -translate-x-1/2 z-50 hidden bg-obsidian text-gold-300 border border-gold-500/40 font-semibold text-xs px-5 py-2.5 rounded-full shadow-2xl">
+    Added to bag!
+  </div>
+
+  <script>
+    const WHATSAPP_NUMBER = "923163360405";
+
+    const products = [
+      {
+        id: 1,
+        code: "SB-01",
+        name: "Noir Gold Zari 3-Piece Suit",
+        price: 2500,
+        category: "budget",
+        tag: "Best Seller",
+        desc: "Classic stitched 3-piece suit featuring rich golden embroidery on neckline, sleeves, daman & dupatta border.",
+        image: "https://res.cloudinary.com/zg7gun8y/image/upload/f_auto/q_auto/IMG-20260818-WA0023.jpg"
+      },
+      {
+        id: 2,
+        code: "SB-02",
+        name: "Royal Maroon Festive 3-Piece",
+        price: 3500,
+        category: "festive",
+        tag: "Wedding Wear",
+        desc: "Festive embroidered 3-piece suit with intricate zari detailing, paired with matching embroidered dupatta.",
+        image: "https://res.cloudinary.com/zg7gun8y/image/upload/f_auto/q_auto/IMG-20260818-WA0022.jpg"
+      },
+      {
+        id: 3,
+        code: "SB-03",
+        name: "Black Silver Fringe 3-Piece",
+        price: 2500,
+        category: "budget",
+        tag: "Ready Made",
+        desc: "Elegant ready-made 3-piece suit with delicate silver motif work and statement fringe lace dupatta.",
+        image: "https://res.cloudinary.com/zg7gun8y/image/upload/f_auto/q_auto/IMG-20260818-WA0021.jpg"
+      },
+      {
+        id: 4,
+        code: "SB-04",
+        name: "Champagne Fawn Sequin 3-Piece",
+        price: 4000,
+        category: "festive",
+        tag: "Luxury Formal",
+        desc: "Formal luxury 3-piece suit with heavy sequin embroidery on sleeves, daman, trousers & matching dupatta.",
+        image: "https://res.cloudinary.com/zg7gun8y/image/upload/f_auto/q_auto/IMG-20260818-WA0020.jpg"
+      },
+      {
+        id: 5,
+        code: "SB-05",
+        name: "Midnight Navy Embroidered 3-Piece",
+        price: 4000,
+        category: "festive",
+        tag: "New Arrival",
+        desc: "Signature embroidered ready-to-wear 3-piece suit adorned with fine floral threadwork & matching dupatta.",
+        image: "https://res.cloudinary.com/zg7gun8y/image/upload/f_auto/q_auto/IMG-20261119-WA0056.jpg"
+      }
+    ];
+
+    const selectedSizes = {};
+    products.forEach(p => (selectedSizes[p.id] = "Medium"));
+
+    let cart = [];
+
+    function observeReveals() {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.1 });
+
+      document.querySelectorAll(".reveal").forEach(el => observer.observe(el));
+    }
+
+    function renderProducts(filter = "all") {
+      const grid = document.getElementById("product-grid");
+      const filtered = filter === "all" ? products : products.filter(p => p.category === filter);
+
+      grid.innerHTML = filtered.map((p, index) => `
+        <article class="reveal bg-white rounded-3xl overflow-hidden border border-black/10 shadow-md hover:shadow-2xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col group" style="transition-delay: ${index * 60}ms">
+          <!-- Crisp Dress Photo -->
+          <div class="relative aspect-[3/4] img-wrap overflow-hidden cursor-pointer bg-ivory" onclick="openModal(${p.id})">
+            <img
+              src="${p.image}"
+              alt="${p.name}"
+              loading="lazy"
+              onload="this.parentElement.classList.remove('img-wrap')"
+              class="w-full h-full object-cover object-top group-hover:scale-105 transition duration-500"
+            />
+            <span class="absolute top-3 left-3 bg-obsidian/85 backdrop-blur-md text-gold-300 text-[11px] font-bold px-3 py-1 rounded-full shadow">
+              ${p.tag}
+            </span>
+            <span class="absolute bottom-3 right-3 bg-white/90 backdrop-blur-md text-obsidian text-[11px] font-bold px-2.5 py-1.5 rounded-full shadow flex items-center gap-1">
+              <i class="fa-solid fa-magnifying-glass-plus text-gold-600"></i> Full View
+            </span>
+          </div>
+
+          <!-- Clear Product Details -->
+          <div class="p-5 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="flex items-start justify-between gap-2 mb-1">
+                <h4 class="font-serif text-lg font-bold text-obsidian leading-snug">${p.name}</h4>
+                <span class="text-[11px] text-gray-500 font-mono bg-ivory px-2 py-0.5 rounded-md border border-black/10 shrink-0">${p.code}</span>
+              </div>
+
+              <div class="flex items-baseline gap-2 mb-2.5">
+                <p class="text-obsidian text-2xl font-extrabold">Rs. ${p.price.toLocaleString()}</p>
+                <span class="text-[11px] text-emerald-700 font-semibold bg-emerald-50 px-2 py-0.5 rounded-full">In Stock</span>
+              </div>
+
+              <p class="text-gray-600 text-xs leading-relaxed mb-4">${p.desc}</p>
+            </div>
+
+            <div>
+              <!-- Size Selector -->
+              <div class="mb-3.5">
+                <p class="text-[11px] font-semibold text-gray-500 mb-1.5">Select Size:</p>
+                <div class="grid grid-cols-4 gap-1.5">
+                  ${["Small", "Medium", "Large", "XL"].map(size => `
+                    <button
+                      onclick="selectSize(${p.id}, '${size}')"
+                      id="size-${p.id}-${size}"
+                      class="py-1.5 rounded-xl text-xs font-bold border transition ${
+                        selectedSizes[p.id] === size
+                          ? "bg-obsidian text-gold-300 border-obsidian shadow-sm"
+                          : "bg-ivory text-gray-700 border-black/10 hover:border-gold-500"
+                      }">
+                      ${size === "Small" ? "S" : size === "Medium" ? "M" : size === "Large" ? "L" : "XL"}
+                    </button>
+                  `).join("")}
+                </div>
+              </div>
+
+              <!-- Action Buttons -->
+              <div class="grid grid-cols-5 gap-2">
+                <button onclick="orderDirect(${p.id})" class="col-span-3 bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold py-3 px-3 rounded-xl flex items-center justify-center gap-1.5 shadow-md active:scale-95 transition">
+                  <i class="fa-brands fa-whatsapp text-sm"></i> 1-Click Order
+                </button>
+                <button onclick="addToCart(${p.id})" class="col-span-2 bg-ivory hover:bg-obsidian hover:text-gold-300 text-obsidian text-xs font-bold py-3 px-2 rounded-xl flex items-center justify-center gap-1.5 border border-black/15 active:scale-95 transition">
+                  <i class="fa-solid fa-bag-shopping"></i> Add
+                </button>
+              </div>
+            </div>
+          </div>
+        </article>
+      `).join("");
+
+      observeReveals();
+    }
+
+    function selectSize(productId, size) {
+      selectedSizes[productId] = size;
+      ["Small", "Medium", "Large", "XL"].forEach(s => {
+        const btn = document.getElementById(`size-${productId}-${s}`);
+        if (!btn) return;
+        btn.className = s === size
+          ? "py-1.5 rounded-xl text-xs font-bold border transition bg-obsidian text-gold-300 border-obsidian shadow-sm"
+          : "py-1.5 rounded-xl text-xs font-bold border transition bg-ivory text-gray-700 border-black/10 hover:border-gold-500";
+      });
+    }
+
+    function filterProducts(category) {
+      document.querySelectorAll(".filter-btn").forEach(btn => {
+        btn.className = btn.dataset.filter === category
+          ? "filter-btn px-4 py-2 rounded-full text-xs font-bold whitespace-nowrap bg-obsidian text-gold-300 shadow-sm transition"
+          : "filter-btn px-4 py-2 rounded-full text-xs font-bold whitespace-nowrap bg-white text-gray-700 border border-black/10 hover:border-gold-500 transition";
+      });
+      renderProducts(category);
+    }
+
+    function orderDirect(productId) {
+      const p = products.find(item => item.id === productId);
+      const size = selectedSizes[productId] || "Medium";
+      const message =
+        `Assalam-o-Alaikum *Solution Boutique*! ✨\n\n` +
+        `Mujhe yeh suit order karna hai:\n` +
+        `• *Article:* ${p.name} (${p.code})\n` +
+        `• *Price:* Rs. ${p.price.toLocaleString()}\n` +
+        `• *Size:* ${size}\n\n` +
+        `Kindly availability aur delivery details confirm kar dein.`;
+      window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`, "_blank");
+    }
+
+    function addToCart(productId) {
+      const p = products.find(item => item.id === productId);
+      const size = selectedSizes[productId] || "Medium";
+      const existing = cart.find(i => i.id === productId && i.size === size);
+      if (existing) {
+        existing.qty += 1;
+      } else {
+        cart.push({ ...p, size, qty: 1 });
+      }
+      updateCartUI(true);
+      showToast(`${p.name} (${size}) added to bag!`);
+    }
+
+    function updateQty(index, change) {
+      cart[index].qty += change;
+      if (cart[index].qty <= 0) cart.splice(index, 1);
+      updateCartUI(false);
+    }
+
+    function updateCartUI(animate = false) {
+      const totalItems = cart.reduce((sum, i) => sum + i.qty, 0);
+      const totalAmount = cart.reduce((sum, i) => sum + i.price * i.qty, 0);
+
+      const badge = document.getElementById("cart-count");
+      badge.textContent = totalItems;
+      document.getElementById("mobile-cart-count").textContent = totalItems;
+      document.getElementById("cart-total").textContent = `Rs. ${totalAmount.toLocaleString()}`;
+
+      if (animate) {
+        badge.classList.remove("badge-pop");
+        void badge.offsetWidth;
+        badge.classList.add("badge-pop");
+      }
+
+      const container = document.getElementById("cart-items");
+      if (cart.length === 0) {
+        container.innerHTML = `
+          <div class="text-center py-14 text-gray-500">
+            <i class="fa-solid fa-bag-shopping text-4xl text-gold-500/40 mb-3"></i>
+            <p class="text-sm font-semibold text-obsidian">Your shopping bag is empty</p>
+            <p class="text-xs text-gray-500 mt-1">Select any suit to add it here or order in 1 click.</p>
+          </div>
+        `;
+        return;
+      }
+
+      container.innerHTML = cart.map((item, idx) => `
+        <div class="flex items-center gap-3 bg-white border border-black/10 p-3 rounded-2xl shadow-sm">
+          <img src="${item.image}" alt="${item.name}" class="w-16 h-20 object-cover object-top rounded-xl bg-ivory shrink-0" />
+          <div class="flex-1 min-w-0">
+            <h5 class="text-xs font-bold text-obsidian truncate">${item.name}</h5>
+            <p class="text-[11px] text-gray-500">Size: ${item.size} • ${item.code}</p>
+            <p class="text-sm font-extrabold text-obsidian mt-1">Rs. ${(item.price * item.qty).toLocaleString()}</p>
+          </div>
+          <div class="flex items-center gap-2 bg-ivory rounded-xl px-2.5 py-1 border border-black/10">
+            <button onclick="updateQty(${idx}, -1)" class="text-obsidian font-bold text-xs px-1">-</button>
+            <span class="text-xs font-bold text-obsidian">${item.qty}</span>
+            <button onclick="updateQty(${idx}, 1)" class="text-obsidian font-bold text-xs px-1">+</button>
+          </div>
+        </div>
+      `).join("");
+    }
+
+    function checkoutWhatsApp() {
+      if (cart.length === 0) {
+        showToast("Please add at least 1 suit first!");
+        return;
+      }
+      const name = document.getElementById("cust-name").value.trim();
+      const address = document.getElementById("cust-address").value.trim();
+      const total = cart.reduce((sum, i) => sum + i.price * i.qty, 0);
+
+      let msg = `Assalam-o-Alaikum *Solution Boutique*! 🛍️\n\n*New Storefront Order:*\n`;
+      cart.forEach((item, i) => {
+        msg += `${i + 1}. ${item.name} (${item.code}) — Size: ${item.size} x${item.qty} = Rs. ${(item.price * item.qty).toLocaleString()}\n`;
+      });
+      msg += `\n*Total Amount:* Rs. ${total.toLocaleString()}`;
+      if (name) msg += `\n*Customer Name:* ${name}`;
+      if (address) msg += `\n*Delivery Address:* ${address}`;
+      msg += `\n\nKindly confirm my order!`;
+
+      window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(msg)}`, "_blank");
+    }
+
+    function toggleCart() {
+      document.getElementById("cart-drawer").classList.toggle("hidden");
+    }
+
+    function openModal(productId) {
+      const p = products.find(item => item.id === productId);
+      document.getElementById("modal-img").src = p.image;
+      document.getElementById("modal-caption").textContent = `${p.name} — Rs. ${p.price.toLocaleString()}`;
+      document.getElementById("image-modal").classList.remove("hidden");
+    }
+
+    function closeModal() {
+      document.getElementById("image-modal").classList.add("hidden");
+    }
+
+    function showToast(text) {
+      const toast = document.getElementById("toast");
+      toast.textContent = text;
+      toast.classList.remove("hidden");
+      setTimeout(() => toast.classList.add("hidden"), 2200);
+    }
+
+    renderProducts("all");
+    updateCartUI(false);
+  </script>
+</body>
+</html>
